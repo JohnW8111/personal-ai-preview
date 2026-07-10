@@ -27,8 +27,8 @@ export default function Home() {
           </Link>
         </div>
         <p style={{ fontSize: "0.9rem", color: "#6b7280", marginTop: "0.8rem" }}>
-          One click downloads a ZIP file — no account needed. Prefer to see the
-          source?{" "}
+          One click, no account needed — everything lands in your Downloads
+          folder. Prefer to see the source?{" "}
           <a href={GITHUB} target="_blank" rel="noreferrer">
             It&rsquo;s on GitHub.
           </a>
@@ -67,12 +67,12 @@ export default function Home() {
             <span className="step-num">1</span>
             <h3>Get your copy of the folder</h3>
             <p>
-              Click the <strong>Download</strong> button on this page — a ZIP
-              file lands in your Downloads folder. Double-click it and it
-              becomes a folder called{" "}
-              <code>personal-ai-template-main</code>. Move that whole folder to
-              your Documents and rename it something friendly like{" "}
-              <strong>Personal AI</strong>.
+              Click the <strong>Download</strong> button on this page, then
+              look in your Downloads for a folder called{" "}
+              <code>personal-ai-template-main</code>. (If you see a ZIP file
+              with that name instead, double-click it and it becomes the
+              folder.) Move the whole folder to your Documents and rename it
+              something friendly like <strong>Personal AI</strong>.
             </p>
           </div>
           <div className="step">
