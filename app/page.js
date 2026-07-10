@@ -159,6 +159,59 @@ PAI on: run my weekly review.`}</div>
         </p>
       </section>
 
+      <section className="section">
+        <h2>Skills: teach it once, ask for it forever</h2>
+        <p>
+          A <strong>skill</strong> is a repeatable workflow saved as a file in
+          your folder. Once a skill exists, you never re-explain that task
+          &mdash; one sentence brings back the whole routine, done your way,
+          every time. This is how your Personal AI grows from a helpful
+          stranger into a practiced hand.
+        </p>
+        <p>Your copy comes with eight skills built in, including:</p>
+        <div className="steps">
+          <div className="step">
+            <h3>weekly-review</h3>
+            <p>
+              Your week at a glance: who to follow up with, ideas waiting in
+              your inbox, tasks still open.
+            </p>
+          </div>
+          <div className="step">
+            <h3>research</h3>
+            <p>
+              Careful, source-backed research &mdash; from a quick look-up to a
+              deep investigation with every claim traceable.
+            </p>
+          </div>
+          <div className="step">
+            <h3>extract-wisdom</h3>
+            <p>
+              Turn a long podcast, video, or article into the insights worth
+              keeping.
+            </p>
+          </div>
+          <div className="step">
+            <h3>process-forge</h3>
+            <p>
+              Design or fix a process step by step &mdash; an intake procedure,
+              an event plan, a volunteer workflow.
+            </p>
+          </div>
+        </div>
+        <p style={{ marginTop: "1.2rem" }}>
+          And the best one is the one that doesn&rsquo;t exist yet. When you
+          catch yourself asking for the same kind of help twice, say:
+        </p>
+        <div className="examples">{`PAI on: turn what we just did into a skill.`}</div>
+        <p>
+          The assistant writes the workflow down, and from then on it&rsquo;s
+          yours &mdash; part of your folder, working in every future
+          conversation.{" "}
+          <Link href="/files">Read the actual skill files in the tour.</Link>
+        </p>
+      </section>
+
       <section className="cta-band">
         <h2>See it before you try it</h2>
         <p>

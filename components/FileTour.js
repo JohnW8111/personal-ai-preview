@@ -51,7 +51,9 @@ export default function FileTour({ files }) {
                 className={f.path === selected ? "active" : ""}
                 onClick={() => setSelected(f.path)}
               >
-                {f.path.split("/").pop()}
+                {f.path.endsWith("/SKILL.md")
+                  ? f.path.split("/").at(-2)
+                  : f.path.split("/").pop()}
               </button>
             ))}
           </div>
