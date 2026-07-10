@@ -24,11 +24,9 @@ export default function InterviewPage() {
         <div className="hero-buttons">
           <a
             className="button primary"
-            href="https://github.com/JohnW8111/personal-ai-template"
-            target="_blank"
-            rel="noreferrer"
+            href="https://github.com/JohnW8111/personal-ai-template/archive/refs/heads/main.zip"
           >
-            Download from GitHub
+            Download Personal AI — free
           </a>
           <Link className="button secondary" href="/files">
             Look inside the folder first

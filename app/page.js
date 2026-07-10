@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 const GITHUB = "https://github.com/JohnW8111/personal-ai-template";
+const ZIP =
+  "https://github.com/JohnW8111/personal-ai-template/archive/refs/heads/main.zip";
 
 export default function Home() {
   return (
@@ -14,8 +16,8 @@ export default function Home() {
           conversation.
         </p>
         <div className="hero-buttons">
-          <a className="button primary" href={GITHUB} target="_blank" rel="noreferrer">
-            Download from GitHub
+          <a className="button primary" href={ZIP}>
+            Download Personal AI — free
           </a>
           <Link className="button secondary" href="/interview">
             Watch the setup interview
@@ -24,6 +26,13 @@ export default function Home() {
             Look inside the folder
           </Link>
         </div>
+        <p style={{ fontSize: "0.9rem", color: "#6b7280", marginTop: "0.8rem" }}>
+          One click downloads a ZIP file — no account needed. Prefer to see the
+          source?{" "}
+          <a href={GITHUB} target="_blank" rel="noreferrer">
+            It&rsquo;s on GitHub.
+          </a>
+        </p>
       </section>
 
       <section className="section">
@@ -58,9 +67,12 @@ export default function Home() {
             <span className="step-num">1</span>
             <h3>Get your copy of the folder</h3>
             <p>
-              On the GitHub page, click the green <strong>Code</strong> button,
-              choose <strong>Download ZIP</strong>, double-click the ZIP to open
-              it, and move the whole folder to your Documents.
+              Click the <strong>Download</strong> button on this page — a ZIP
+              file lands in your Downloads folder. Double-click it and it
+              becomes a folder called{" "}
+              <code>personal-ai-template-main</code>. Move that whole folder to
+              your Documents and rename it something friendly like{" "}
+              <strong>Personal AI</strong>.
             </p>
           </div>
           <div className="step">
@@ -225,8 +237,8 @@ PAI on: run my weekly review.`}</div>
           <Link className="button secondary" href="/interview">
             Watch the setup interview
           </Link>
-          <a className="button primary" href={GITHUB} target="_blank" rel="noreferrer">
-            Download from GitHub
+          <a className="button primary" href={ZIP}>
+            Download Personal AI — free
           </a>
         </div>
       </section>

@@ -20,12 +20,10 @@ export default function RootLayout({ children }) {
               <Link href="/files">Look inside</Link>
               <Link href="/interview">See the interview</Link>
               <a
-                href="https://github.com/JohnW8111/personal-ai-template"
-                target="_blank"
-                rel="noreferrer"
+                href="https://github.com/JohnW8111/personal-ai-template/archive/refs/heads/main.zip"
                 className="nav-cta"
               >
-                Get it on GitHub
+                Download — free
               </a>
             </div>
           </nav>
@@ -33,15 +31,15 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <footer className="site-footer">
           <p>
-            Personal AI is a free, open template.{" "}
+            Personal AI is a free, open template — your copy lives on your
+            computer, not on this website.{" "}
             <a
               href="https://github.com/JohnW8111/personal-ai-template"
               target="_blank"
               rel="noreferrer"
             >
-              Download it from GitHub
-            </a>{" "}
-            — your copy lives on your computer, not on this website.
+              View the source on GitHub.
+            </a>
           </p>
         </footer>
       </body>
