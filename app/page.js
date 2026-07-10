@@ -79,9 +79,14 @@ export default function Home() {
             <span className="step-num">2</span>
             <h3>Connect your AI app to the folder</h3>
             <p>
-              Open the <strong>Claude</strong> desktop app (Cowork) or the{" "}
-              <strong>Codex</strong> desktop app and choose that folder as the
-              place to work.
+              <strong>Claude</strong> desktop app: open Cowork and choose that
+              folder as the place to work.
+            </p>
+            <p>
+              <strong>ChatGPT</strong> desktop app: select{" "}
+              <strong>Codex</strong> at the top — <em>not Chat</em>. Codex is
+              the part that can work inside your folder; regular Chat
+              can&rsquo;t see your files. Then choose the folder.
             </p>
           </div>
           <div className="step">
