@@ -22,7 +22,7 @@ Load the user's local Personal AI context only when requested.
 
 ## Procedure
 
-Read `personal-ai/ON.md` and follow its activation contract exactly. `ON.md`
+Read `ON.md` in the folder selected for this session and follow its activation contract exactly. `ON.md`
 is the single source of truth for the loading order, the capture commands
 (`PAI remember:`, `PAI feedback:`, `PAI inbox:`), substantial-task rules, and
 skill selection. Do not restate or re-derive the contract from this file; only
@@ -30,21 +30,20 @@ the triggers, resolution rules, output behavior, and examples below live here.
 
 ## System Resolution
 
-- `PAI on` resolves to the canonical `personal-ai/` root identified by the
-  activation contract or installed adapter.
-- If the canonical `personal-ai/` directory is unavailable, ask the user where
-  it moved instead of guessing.
+- `PAI on` resolves to the folder containing `ON.md` in the selected workspace.
+- If that folder is unavailable, ask the user where it moved instead of guessing.
 
 ## Output Behavior
 
 - Briefly confirm: `PAI context loaded.`
 - Do not dump the context back to the user.
-- Do not treat this as global unless the user keeps using the switch.
-- If the user says `PAI off` or `Personal AI off`, stop using this context unless asked again.
+- Keep this context active for the rest of the current workspace conversation.
+- A new conversation starts without Personal AI context until the user invokes the switch again.
+- If the user says `PAI off` or `Personal AI off`, stop using this context in future requests. Explain that it cannot erase Personal AI material already present in the chat if that distinction matters to the request.
 
 ## Boundaries
 
-Follow `personal-ai/assistant/boundaries.md`.
+Follow `assistant/boundaries.md` in the selected Personal AI folder.
 
 ## Examples
 

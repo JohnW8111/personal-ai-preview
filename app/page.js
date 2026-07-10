@@ -27,8 +27,8 @@ export default function Home() {
           </Link>
         </div>
         <p style={{ fontSize: "0.9rem", color: "#6b7280", marginTop: "0.8rem" }}>
-          One click, no account needed — everything lands in your Downloads
-          folder. Prefer to see the source?{" "}
+          One click, no separate Personal AI account — everything lands in your
+          Downloads folder. Prefer to see the source?{" "}
           <a href={GITHUB} target="_blank" rel="noreferrer">
             It&rsquo;s on GitHub.
           </a>
@@ -39,19 +39,25 @@ export default function Home() {
         <h2>Deliberately simple</h2>
         <p>
           It is just <strong>a folder of ordinary files that lives on your own
-          computer</strong>. There is no account to create, nothing to install
-          beyond the AI app you already use, and nothing stored in the cloud.
+          computer</strong>. There is no separate Personal AI account to create
+          and nothing to install beyond the AI app you already use. Your
+          Personal AI files stay in this folder on your computer; the AI app
+          you choose may process conversations and files you make available
+          under its own privacy settings.
         </p>
         <div className="promise">
           <p>
             <strong>Off by default.</strong> Your assistant behaves completely
-            normally until you type <code>PAI on</code>. Nothing about you is
-            loaded behind your back.
+            normally until you type <code>PAI on</code>. Once you turn it on,
+            it stays on for that workspace conversation until you type{" "}
+            <code>PAI off</code>. A new conversation starts off again.
           </p>
           <p>
-            <strong>Memory only when you say so.</strong> The assistant records
-            something about you only when you type <code>PAI remember:</code>{" "}
-            &mdash; never from ordinary conversation.
+            <strong>Memory only when you say so.</strong> The assistant never
+            turns ordinary conversation into durable memory. <code>PAI setup</code>,{" "}
+            <code>PAI remember:</code>, <code>PAI inbox:</code>, and{" "}
+            <code>PAI feedback:</code> each write only the specific information
+            you explicitly ask them to capture.
           </p>
           <p>
             <strong>Yours.</strong> Every file is on your computer, readable by
@@ -71,8 +77,8 @@ export default function Home() {
               look in your Downloads for a folder called{" "}
               <code>personal-ai-template-main</code>. (If you see a ZIP file
               with that name instead, double-click it and it becomes the
-              folder.) Move the whole folder to your Documents and rename it
-              something friendly like <strong>Personal AI</strong>.
+              folder.) Move the whole folder to your Documents and keep its
+              name as-is.
             </p>
           </div>
           <div className="step">
@@ -129,8 +135,9 @@ export default function Home() {
                   <code>PAI off</code>
                 </td>
                 <td>
-                  The assistant stops using your personal files and goes back to
-                  normal.
+                  The assistant stops reading or using Personal AI files in
+                  future requests in this conversation. Start a new conversation
+                  for a clean separation from material already discussed.
                 </td>
               </tr>
               <tr>
@@ -138,8 +145,8 @@ export default function Home() {
                   <code>PAI remember:</code>
                 </td>
                 <td>
-                  Saves one fact, preference, or decision &mdash; the only way
-                  lasting memory is recorded.
+                  Saves one durable fact, preference, decision, or lesson about
+                  you.
                 </td>
               </tr>
               <tr>
