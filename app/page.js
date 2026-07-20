@@ -85,8 +85,13 @@ export default function Home() {
             <span className="step-num">2</span>
             <h3>Connect your AI app to the folder</h3>
             <p>
-              <strong>Claude</strong> desktop app: open Cowork and choose that
-              folder as the place to work.
+              <strong>Claude</strong> desktop app: open Cowork and create a
+              project using that existing folder. If Cowork asks which file to
+              use as context, choose <code>START-HERE.md</code>. This is more
+              reliable than attaching the folder to an ordinary conversation
+              with the <strong>+ Folder</strong> button. If you already used
+              {" "}<strong>+ Folder</strong>, you can still continue &mdash; use
+              the Claude message in Step 3.
             </p>
             <p>
               <strong>ChatGPT</strong> desktop app: select{" "}
@@ -97,9 +102,17 @@ export default function Home() {
           </div>
           <div className="step">
             <span className="step-num">3</span>
-            <h3>
-              Type <code>PAI setup</code>
-            </h3>
+            <h3>Start the setup interview</h3>
+            <p>
+              <strong>Claude Cowork:</strong> paste this first message so
+              Claude uses the connected template instead of a different system
+              with the same initials:
+            </p>
+            <div className="examples">{`Use only the connected folder personal-ai-template-main. This is the Personal AI template in that folder, not Daniel Miessler's PAI or LifeOS. Do not search the web, download, or install anything for setup. Read START-HERE.md and follow it. Then begin the PAI setup interview one question at a time.`}</div>
+            <p>
+              <strong>Codex:</strong> type the same simple command as before:
+            </p>
+            <div className="examples">PAI setup</div>
             <p>
               The assistant interviews you &mdash; who you are, what you care
               about, who you meet with &mdash; and fills in your files for you.
